@@ -60,9 +60,9 @@ $dados = json_decode(file_get_contents("http://loja-acert-sis.test/api/clientes-
 						<div class="postbox-header">
 							<form action="" name="selectAno" method="get">
 								<select name="ano" onchange="document.selectAno.submit()">
-									<option value="2018" <?= isset($_GET['ano']) && $_GET['ano'] == '2018' ? 'selected' : ''?>>2018</option>
-									<option value="2019" <?= isset($_GET['ano']) && $_GET['ano'] == '2019' ? 'selected' : ''?>>2019</option>
-									<option value="2020" <?= isset($_GET['ano']) && $_GET['ano'] == '2020' ? 'selected' : ''?>>2020</option>
+									<option value="2018" <?= $ano == '2018' ? 'selected' : ''?>>2018</option>
+									<option value="2019" <?= $ano == '2019' ? 'selected' : ''?>>2019</option>
+									<option value="2020" <?= $ano == '2020' ? 'selected' : ''?>>2020</option>
 								</select>
 							</form>
 
