@@ -85,6 +85,13 @@ $menu[15]                           = array( __( 'Links' ), 'manage_links', 'lin
 
 // $menu[20] = Pages.
 
+$menu[21]  = array( __( 'Minhas páginas' ), 'read', 'post.php', '', 'menu-top menu-icon-minhas', 'menu-minhas', 'dashicons-admin-minhas' );
+$submenu['post.php'][5] = array( __( 'Por menor valor' ), 'read', 'menor-valor.php' );
+$submenu['post.php'][10] = array( __( 'Maior compra' ), 'read', 'maior-compra.php' );
+$submenu['post.php'][15] = array( __( 'Compras por ano' ), 'read', 'compra-por-ano.php' );
+$submenu['post.php'][20] = array( __( 'Recomentar roupa' ), 'read', 'recomentar-roupa.php' );
+
+
 // Avoid the comment count query for users who cannot edit_posts.
 if ( current_user_can( 'edit_posts' ) ) {
 	$awaiting_mod      = wp_count_comments();
